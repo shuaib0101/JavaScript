@@ -1,0 +1,24 @@
+<script>
+    const myFun = () =>{
+        setTimeout(()=>{
+          let roll_no = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+          console.log(roll_no[9]);
+
+          setTimeout((rollno)=>{
+              let roll_no10_Data = {
+                name: "Shuaib Khan",
+                registration_no: "19JZBCS0101",
+                department: "CSIT",
+                batch: "3rd"
+              }
+              console.log(`The Roll_No ${rollno} name is ${roll_no10_Data.name} Registration ID is ${roll_no10_Data.registration_no} Batch ${roll_no10_Data.batch} and Department ${roll_no10_Data.department} `);
+          setTimeout((name)=>{
+             console.log(`${name} is a Good Cricket Player`);
+          },2000, roll_no10_Data.name)
+            },2000, roll_no[9]);
+        },2000)
+    }
+
+    myFun();
+
+</script>

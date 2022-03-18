@@ -1,0 +1,33 @@
+<script>
+    class Students{
+        constructor(name , age , deprt){
+           this.name = name;
+           this.age = age;
+           this.deprt = deprt;
+        }
+        bioData(){
+            return `Hello my name is ${this.name} i am ${this.age} year old and my department is ${this.deprt}`;
+        }
+    }
+
+    class players extends Students{
+        constructor(name , age , deprt, game){
+           super(name , age , deprt);
+           this.game = game;
+        }
+        player_bioData(){
+            return `${super.bioData()} and i love ${this.game}`;
+        }
+    }
+
+
+    let Obj1 = new players("Shuaib" , 22 , "CS", "Cricket");
+    
+    console.log(Obj1.player_bioData());
+    // let Obj1 = new Students("Shuaib" , 22 , "CS");
+    // let Obj2 = new Students("Samman" , 23 , "Mechanical");
+    // let Obj3 = new Students("Samad" , 20 , "Electrical");
+    Obj1.bioData();
+    // Obj2.bioData();
+    // Obj3.bioData();
+</script>

@@ -1,0 +1,31 @@
+<script>
+    // es5
+    //  function myFun(a,b,c) {
+    //   console.log(a+b+c);    
+    // }
+    // myFun(4,5,12);
+
+    // let arr = [10,12,13];
+    // myFun.apply(null, arr);
+    // myFun(...arr);
+
+    // replace concate
+    
+//     let arr1 = [1,2,3];
+//     let arr2 = [4,5,6];
+//     let arr3 = [7,8,9];
+
+// //    arr1 =  arr1.concat(arr2,arr3);
+// arr1 = [...arr1,...arr2,...arr3]
+//     console.log(arr1);
+
+// replace copy
+let arr1 = [1,2,3];
+let arr2;
+let arr3 = [10,10,10];
+// arr2 = arr1;
+// arr2.push(9,8);
+arr2 = [...arr1,5,4,...arr3];
+console.log(arr2);
+console.log(arr1);
+</script>

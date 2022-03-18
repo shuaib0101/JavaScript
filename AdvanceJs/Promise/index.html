@@ -1,0 +1,29 @@
+<script>
+    const proRollNo = new Promise((resole, reject)=>{
+        setTimeout(()=>{
+          const roll_no = [1,2,3,4,5,6,7,8,9,10];
+          resole(roll_no);
+        },2000)
+    });
+
+    const proBioData = (rollNo) =>{
+        return new Promise((resole, reject)=>{
+            setTimeout((rollNo)=>{
+                const Data = {
+                name: "Shuaib Khan", 
+                age: 22
+            };
+            resole(`The Roll No ${rollNo} Name is ${Data.name} and ${Data.age} year old`);
+            },2000, rollNo);
+        }) 
+    }
+
+    proRollNo.then((rollNo)=>{
+console.log(rollNo[1]);
+return proBioData(rollNo[1])
+    }).then((bioData)=>{
+      console.log(bioData);
+    }).catch(()=>{
+
+    });
+</script>

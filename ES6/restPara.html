@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function myFun(a,b,c,d,e,f,g,h,i,j,k,l){
+        //     console.log(a+b+c+d+e+f+g+h+i+k+l);
+        // }
+        
+        // myFun(32,34,12,43,54,12,13,12,32,43,1,2)
+
+
+        function myFun(...myInputs){
+            console.log(myInputs);
+            console.log(...myInputs);
+            let total = 0;
+            for(let i of myInputs){
+                total +=  i;
+            }
+            console.log(total)
+        }
+        myFun(32,34,12,43,54,12,13,12,32,43,1,2)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<script>
+//     let obj1 = {
+//         name: "Shuaib",
+//         Department: "Computer Science",
+//         feature: function(course){
+//             console.log(`${course}`);
+//         }
+//     }
+
+//     let obj2 = {
+//         name: "Bilal",
+//         Department: "CsIt", 
+//     }
+//     // obj1.feature("Web Development");
+//    let Bind =  obj1.feature.bind(obj2);
+//    Bind("Virtal Assestant");
+
+
+    let obj1 = {
+        name: "Shuaib",
+        Department: "Computer Science"
+    }
+     function feature(course){
+            console.log(`${course}`);
+        }
+        let Bind =  feature.bind(obj1);
+        Bind("Web Development");
+</script>

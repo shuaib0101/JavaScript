@@ -1,0 +1,30 @@
+<script>
+    const myFun1 = (friend,callBack) => {
+
+            console.log(`Hello ${friend} i am busy i will call you back.`);
+
+         callBack();
+    }
+
+    const myFun2 = () => {
+        console.log(`Hello bro`);
+    }
+    setTimeout(myFun1, 2000, "Shuaib", myFun2)
+
+    // Callback Function Example
+// function greet(name, myFunction) {
+//     console.log('Hello world');
+
+//     // callback function
+//     // executed only after the greet() is executed
+//     myFunction(name);
+// }
+
+// // callback function
+// function sayName(name) {
+//     console.log('Hello' + ' ' + name);
+// }
+
+// // calling the function after 2 seconds
+// setTimeout(greet, 2000, 'John', sayName);
+</script>

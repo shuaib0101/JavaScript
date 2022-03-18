@@ -1,0 +1,36 @@
+<script>
+    const interViewQuestion = (name) =>{
+        if(name === "Shuaib"){
+            return function(Q){
+              console.log(`Hello ${name}. What is ${Q}. plz explain`);
+            }
+        }
+        if(name === "Farooq"){
+            return function(Q){
+              console.log(`Hello ${name}. What is ${Q}. plz explain`);
+            }
+        }
+        if(name === "Noor Khan"){
+            return function(Q){
+              console.log(`Hello ${name}. What is ${Q}. plz explain`);
+            }
+        }else{
+            return function(){
+                console.log("Not Available");
+            }
+        }
+    }
+
+    let cand1 = interViewQuestion("Shuaib");
+    cand1("Front End Development");
+    cand1("Full Stack Development");
+
+    let cand2 = interViewQuestion("Farooq");
+    cand2("UI");
+    cand2("UX");
+
+    let cand3 = interViewQuestion("Noor Khan");
+    cand3("AutoCad");
+    cand3("Application Development");
+
+</script>

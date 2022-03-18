@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function is a first class citizens</title>
+</head>
+<body>
+    <script>
+        //    A programming language is said to have first class functions. When functions in that language are treated like any other variable.
+  
+
+    // 1. In JS we can assign a function as a variable 
+    //  let myFun = function(){
+    //      console.log("Hello i am a funcation as a variable");
+    //  }
+    //  myFun();
+
+    // const myObj = {
+    //     name: "Shuaib",
+    //     myFun: function(){
+    //         console.log("Hello i am a funcation as pass by a property");
+    //     }
+    // }
+
+    // myObj.myFun();
+
+
+    // 2. pass a function is a Argument 
+    
+//    function myFun(){
+//        return "GameOfThrone";
+//    }
+
+//    function myFun2(call){
+//        console.log(call());
+//    }
+
+//    myFun2(myFun);
+
+//    3. Return Function 
+function myFun(){
+    return function myFun2(){
+        console.log("Hello");
+    }
+}
+
+myFun()();
+    </script>
+ 
+</body>
+</html>

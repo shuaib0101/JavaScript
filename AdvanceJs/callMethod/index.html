@@ -1,0 +1,17 @@
+<script>
+    let obj1 = {
+        name : "Shuaib",
+        content : "Programmer",
+
+        feature : function(support){
+            console.log(`Hello my name is ${this.name} and i am ${this.content}. please ${support} me.`);
+        }
+    }
+
+    let obj2 = {
+        name : "Zakir",
+        content : "virtual Assestent",
+    }
+
+    obj1.feature.call(obj2, "Support");
+</script>

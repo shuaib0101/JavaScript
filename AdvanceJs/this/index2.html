@@ -1,0 +1,16 @@
+<script>
+    const myObj = {
+        name: "Shuaib",
+        age: "21",
+
+        myFun: function(){
+            console.log(this);
+
+            function myFun2(){
+                console.log(this);
+            }
+            myFun2();
+        }
+    }
+    myObj.myFun();
+</script>

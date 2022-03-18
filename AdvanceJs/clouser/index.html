@@ -1,0 +1,14 @@
+<script>
+const outerFun = (a) => {
+    var b = 10; 
+
+    const innerFun = () => {
+        console.log(a+b);
+    }
+   return innerFun;
+}
+
+let inner = outerFun(5);
+console.dir(inner);
+inner();
+</script>
